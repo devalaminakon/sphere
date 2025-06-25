@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #5e1ee5;
+  --color-secondary: #000000;
+  --color-green: #04a904;
+  --color-tia : #afe638;
+  --color-offWhite : #f1f1f2;
+  --color-gray : #8e8e8e;
+  --color-ash : #2C2C2C;
+  --font-montserrat: "Montserrat", "sans-serif";
+  --font-prompt: "Prompt", "sans-serif";
+}
+
+.para {
+  @apply text-lg font-montserrat font-medium leading-6 
+}
+
+
+h2 {
+  @apply text-5xl font-prompt font-bold leading-[58px] tracking-[-1px]
+}
+
+h3, .price {
+  @apply font-montserrat font-extrabold text-2xl text-ash leading-[30px] 
+}
+
+  .custom-fill-gradient {
+    background: linear-gradient(140deg, rgba(255, 255, 255, 0.52) 1.44%, rgba(255, 255, 255, 0.18) 98.22%);
+  }
+
+  .custom-drop-shadow {
+    filter: drop-shadow(0px 4px 24px rgba(0, 0, 0, 0.08));
+    box-shadow: 0px 4px 24px -1px rgba(0, 0, 0, 0.08);
+  }
+
+
+.heart_box:hover .heart path {
+  fill: black;
+}
+
+.category_slider.slick-slider .slick-track {
+  @apply flex gap-24 
+}
+
+.slick-arrow.slick-prev, .slick-arrow.slick-next {
+  color: white;
+}
